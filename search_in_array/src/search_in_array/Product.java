@@ -31,7 +31,11 @@ public class Product {
     }
     
     public boolean hasTag(String tag) {
-        // NEEDS IMPLEMENTATION
+        for (int i = 0; i < tags.size(); i++) {
+            if (tags.get(i).equals(tag)) {
+                return true;
+            }
+        }
         return false;
     }
 }
