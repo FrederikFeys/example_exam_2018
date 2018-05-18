@@ -24,13 +24,15 @@ public class NumberList {
     }
     
     public double average() {
-        // Needs implementation        
-        return 0;
+        return sum() / numbers.size();
     }
     
     public double sum() {
-        // Needs implementation
-        return 0;
+        double sum = 0;
+        for (int i = 0; i < numbers.size(); i++) {
+            sum += (int)(numbers.get(i));
+        }
+        return sum;
     }
     
 }
